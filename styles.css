@@ -317,7 +317,7 @@ header {
 .slider-line {
   display: flex;
   flex: 1 0 auto;
-  width: 100%;
+  width: 50%;
   position: relative;
   transform: scale(1, 1);
   transition: all ease 1s;
@@ -385,7 +385,7 @@ header {
 }
 .slider-active .slider-item {
   width: 40vw;
-  height: 27vw;
+  height: 28vw;
 }
 .slider-active img {
   width: 100%;
