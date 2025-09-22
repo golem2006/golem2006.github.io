@@ -1,0 +1,834 @@
+@font-face {font-family: 'ptSans'; src: url('../barbershop/fonts/web/ptsansnarrow.woff'); }
+@font-face {font-family: 'ptSansBold'; src: url('../barbershop/fonts/web/ptsansnarrowbold.woff'); }
+
+:root {
+    --main-color:#f5f2ef;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+html {
+    padding: 0;
+    margin: 0;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+h1 {
+    margin-top: 3vw;
+    font-family: 'ptSansBold';
+    font-weight: 300;
+    font-size: 2vw;
+}
+
+.wide {
+    background-image: none;
+    font-size: 0.7vw;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'ptSansBold';
+    font-weight: 200;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+body > header {
+    width: 100vw;
+    background-color: black;
+    font-family: 'ptSansBold';
+}
+
+.headerWrapper {
+    top: 0;
+    left: 0;
+    width: 37.26vw;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    gap: 1vw;
+    padding: 1.5vw;
+    justify-content: space-between;
+    font-size: 0.7vw;
+}
+
+.wide body {
+    background-image: url('../images/blockBG.jpg');
+}
+
+.wide main {
+    margin: 0 10vw 0 10vw;
+}
+.wide .headerWrapper {
+    width: 80vw;
+}
+
+header > .headerWrapper a {
+    color: var(--main-color);
+    padding: 0.6vw 0;
+}
+
+.headerWrapper a:not(.enterButton):hover {
+    background-color: #242424;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    border-bottom: 3px solid var(--main-color);
+}
+
+#enter {
+    display: flex;
+    gap: 5px;
+    box-sizing: border-box;
+}
+
+#enter:hover, #basket:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#enterPic {
+    color: gray;
+    width: 1.5vw;
+}
+
+#hero {
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5vw;
+    box-sizing: border-box;
+}
+
+.hero-logo {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#hero-logo-logo {
+    width: 15vw;
+    height: 6vw;
+}
+
+.hero-bottom {
+    display: flex;
+    gap: 2vw;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-top: 1vw;
+}
+
+.hero-bottom-block {
+    text-align: center;
+    width: 12vw;
+}
+
+.hero-bottom-block-header {
+    text-align: center;
+    font-size: 1.3vw;
+    font-family: 'ptSansBold';
+}
+
+.hero-bottom-block-desc {
+    font-size: 0.6vw;
+    font-weight: 500;
+}
+
+.romb {
+    font-size: 1.5vw;
+}
+
+.block {
+    background-image: url('../images/blockBG.jpg');
+    background-color: var(--main-color);
+    color: black;
+    padding: 3.1vw;
+    box-sizing: border-box;
+    margin-top: 2vw;
+    gap: 3.1vw;
+}
+
+.block-block {
+    width: 12.42vw;
+    flex-grow: 1;
+    word-break: keep-all;
+    word-wrap: none;
+    overflow-x: visible;
+}
+
+.block-block p, .main-form, footer {
+    font-size: 0.6vw;
+    line-height: 1vw;
+}
+
+.block-block-header {
+    font-size: 1.2vw;
+    font-family: 'ptSansBold';
+}
+
+main {
+    margin: 0 31.37vw;
+}
+
+.blackButton {
+    display: block;
+    color: var(--main-color);
+    background-color: black;
+    font-size: 0.6vw;
+    padding: 0.5vw 0;
+    text-align: center;
+    width: 5.8vw;
+}
+
+.block-block .blackButton {
+    margin-top: 2vw;
+}
+
+.slider-container {
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    height: 10vw;
+}
+
+.slider-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.6vw auto 0 auto;
+    width: 84%;
+    height: 75%;
+}
+
+.slider-container .flexRow, .block-block .flexRow {
+    gap: 0.8vw;
+    justify-content: center;
+}
+
+.block-block .flexRowStart {
+    justify-content: flex-start;
+}
+
+.main-form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.82vw;
+}
+
+.main-form div {
+    width: 5.8vw;
+}
+
+.main-form label {
+    margin: 0.3vw 0.4vw 0;
+}
+
+.main-form input {
+    width: 100%;
+    height: 1.5vw;
+    background-color: black;
+    color: var(--main-color);
+    border: 2px solid black;
+    font-size: 0.8vw;
+}
+
+.main-form input:active {
+    border: 2px solid black;
+    border-radius: 0;
+}
+
+.main-form input[type=submit] {
+    width: 12.86vw;
+    margin-top: 1vw;
+    color: var(--main-color);
+    font-size: 0.5vw;
+}
+
+.main-form input[type=submit]:hover, .blackButton:hover, .icons:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+input, label {
+    display: block;
+}
+
+footer {
+    background-image: url('../images/footerBG.jpg');
+    flex: 0;
+    color: var(--main-color);
+    margin-top: 3.1vw;
+    padding: 3.1vw 31.37vw 2vw 31.37vw;
+    line-height: 0.5vw;
+    box-shadow: inset 0px 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+.wide footer {
+    padding: 3.1vw 10vw 2vw 10vw;
+}
+
+footer a {
+    color: var(--main-color);
+}
+
+footer .flexRow {
+    justify-content: space-between;
+}
+
+footer .blackButton {
+    margin-top: 0.4vw;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.iconsBlock {
+    gap: 0.5vw;
+}
+
+.icons {
+    display: flex;
+    text-align: center;
+    padding: 0.5vw;
+    background-color: black;
+}
+
+.icons img {
+    margin: auto 0;
+    width: 1vw;
+}
+
+/* price-list.html */
+.logo {
+    width: 5vw;
+}
+
+.breadcrumbs {
+    font-family: 'ptSansBold';
+    margin-bottom: 20px;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    margin: 0 5px;
+    color: #f1cdb0; /* Серый цвет для разделителя */
+}
+
+.breadcrumbs .current-page {
+    color: #aba9a7; /* Зеленый цвет для текущей страницы */
+}
+
+.mainTitle {
+    font-family: 'ptSansBold';
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.mainTitleContainer {
+    align-items: center;
+    margin-bottom: 3vw;
+}
+
+.line {
+    height: 1px;
+    width: 20vw;
+    background-color: black;
+}
+
+/* Секция с информацией */
+.info-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    line-height: 1.8vw;
+}
+
+.info-section .flexRow > div {
+    width: 45%;
+}
+h2 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.info-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-section li {
+    margin-bottom: 8px;
+}
+
+.info-section p {
+    width: 80%;
+}
+
+/* Заглушка для цен (черный прямоугольник) */
+.price-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    margin-bottom: 15px;
+}
+
+/* shop.html */
+.shop-content {
+    display: flex;
+    gap: 6vw;
+    margin-top: 20px;
+}
+
+.shop-filter {
+    width: 12vw;
+    padding: 2vw 2vw 2vw 0;
+}
+
+.shop-filter h2 {
+    margin-bottom: 10px;
+}
+
+.shop-filter label {
+    margin-bottom: 5px;
+}
+
+.shop-filter input[type="checkbox"],
+.shop-filter input[type="radio"] {
+    margin-right: 5px;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Optional: Add spacing between items */
+}
+
+.filter-item span {
+    font-size: 1vw;
+    font-weight: 200;
+    font-family: 'ptSans';
+    margin-left: 0.7vw;
+}
+
+.filter-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product-card-bottom {
+    background-color: #ffffff;
+    padding: 0.7vw;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    transform: translateY(3px);
+}
+
+.product-card h3 {
+    font-size: 1.1vw;
+    text-align: justify;
+    font-weight: 300;
+    margin: 0 0 0.7vw 0;
+}
+
+.product-card p {
+    font-size: 1vw;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #e5e5e5;
+    padding: 1vw 2vw;
+    border: none;
+}
+
+.product-card a {
+    background-color: #000;
+    color: #fff;
+    padding: 1vw 2vw;
+    border: none;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    margin-top: 20px;
+    width: fit-content;
+    margin-left: 20vw;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination a.pagination-active {
+    background-color: #000;
+    color: #fff;
+}
+
+.product-title {
+    font-size: 2vw;
+    /* Adjust as needed */
+    font-family: 'ptSansBold', sans-serif;
+    /* Ensure font is loaded */
+    text-align: left;
+}
+
+.product-content {
+    display: flex;
+    gap: 7vw;
+}
+
+.product-images {
+    width: 30%;
+    /* Adjust as needed */
+}
+
+.main-image {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5vw;
+}
+
+.thumbnail {
+    width: calc(19.5vw / 3);
+    /* 24vw - gap 1.5x3 */
+    cursor: pointer;
+}
+
+.product-info {
+    width: 30%;
+    /* 30% от 80vw (24vw) */
+}
+
+.availability {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.description {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.price-buy {
+    display: flex;
+    align-items: center;
+}
+
+.price-buy input:not(.buy-button) {
+    display: none;
+}
+
+.price {
+    font-size: 1vw;
+    margin-right: 20px;
+    margin: 0;
+    background-color: #9f9f9f;
+    padding: 1vw 3vw;
+    border: none;
+}
+
+.buy-button {
+    background-color: #000;
+    color: #fff;
+    padding: 1vw 2vw;
+    border: none;
+    cursor: pointer;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-family: 'ptSansBold', sans-serif;
+}
+
+.buy-button:hover {
+    opacity: 0.8;
+}
+
+.buy-button:disabled {
+    cursor: auto;
+    opacity: 0.6;
+    color: #9f9f9f;
+}
+
+.includes {
+    margin-top: 20px;
+}
+
+.includes h3 {
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+    font-weight: 300;
+    font-family: 'ptSansBold', sans-serif;
+}
+
+.includes ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.includes li {
+    margin-bottom: 5px;
+}
+
+.article {
+    color: #9f9f9f;
+}
+
+.modal {
+    width: 30vw;
+    position: fixed;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 8vw;
+    text-align: center;
+    padding: 3vw;
+    flex-direction: column;
+    color: var(--main-color);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1vw;
+    font-size: 1vw;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5vw;
+    background-color: var(--main-color);
+    margin-bottom: 1vw;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item img {
+    width: 1.5vw;
+}
+
+.item img:hover, .close:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.round {
+    background-color: #000;
+    color: var(--main-color);
+    border-radius: 1vw;
+    padding: 0.5vw 0.6vw;
+}
+
+.modal h2 {
+    margin: 0;
+    width: fit-content;
+}
+
+.modal .price {
+    z-index: 2;
+    background-color: var(--main-color);
+    color: #000;
+    border-radius: 1vw;
+}
+
+.modal .buy-button {
+    z-index: 1;
+    border-radius: 1vw;
+    left: 11.3vw;
+    position: absolute;
+    width: 45%;
+}
+
+.modal .buy-button:hover {
+    background-color: #9f9f9f;
+    color: #000;
+}
+
+.modal .flexRow {
+    margin-bottom: 1vw;
+}
+
+.close {
+    padding: 0.6vw 0.9vw;
+    font-size: 1.1vw;
+    border-radius: 1.5vw;
+    font-weight: 600;
+}
+
+.modal form[name="autorisation"] {
+    display: flex; /* Используем flexbox для расположения полей */
+    flex-direction: column; /* Поля располагаются друг под другом */
+    gap: 1vw; /* Отступ между полями */
+    width: 100%; /* Форма занимает всю доступную ширину */
+    margin-top: 1.5vw; /* Отступ сверху от заголовка */
+}
+
+/* Стили для полей ввода (input) */
+.modal form[name="autorisation"] input[type="text"],
+.modal form[name="autorisation"] input[type="password"] {
+    width: 100%; /* Инпут занимает всю ширину своей колонки */
+    padding: 1vw; /* Отступы внутри поля */
+    border: 1px solid var(--main-color); /* Рамка */
+    border-radius: 0.5vw; /* Скругление углов */
+    font-size: 1vw; /* Размер шрифта */
+    color: var(--main-color); /* Цвет текста */
+    background-color: rgba(0, 0, 0, 0); /* Фон для инпутов */
+    box-sizing: border-box; /* Чтобы padding не влиял на общую ширину */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Плавные переходы */
+}
+
+/* Стиль фокуса для полей ввода */
+.modal form[name="autorisation"] input[type="text"]:focus,
+.modal form[name="autorisation"] input[type="password"]:focus {
+    outline: none; /* Убираем стандартный outline */
+    border: none; /* Или другой цвет рамки при фокусе */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* Добавляем тень при фокусе */
+}
+
+/* Стиль для плейсхолдера */
+.modal form[name="autorisation"] input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Полупрозрачный цвет плейсхолдера */
+}
+
+/* Стили для кнопки "Войти" внутри формы */
+form[name="autorisation"] input[type="submit"] {
+    width: 100%; /* Кнопка занимает всю ширину */
+    padding: 1vw;
+    font-size: 1.1vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--main-color); /* Фон кнопки */
+    color: #000; /* Цвет текста кнопки */
+    border: none; /* Убираем стандартную рамку */
+    margin-top: 0.5vw; /* Небольшой отступ сверху */
+}
+
+.modal form[name="autorisation"] input[type="submit"]:hover {
+    background-color: #000; /* Пример цвета при наведении */
+    color: var(--main-color);
+}
+
+.modal form[name="autorisation"] .buy-button {
+    left: auto;
+    position: static;
+    width: 100%;
+    margin-top: 1vw;
+}
+
+/* Стили для контейнера корзины */
+#basketContainer {
+    margin-left: auto;
+    position: relative; /* Важно для позиционирования span */
+    display: flex; /* Чтобы иконка и кружок были рядом */
+    align-items: center; /* Центрируем по вертикали */
+    cursor: pointer; /* Указываем, что это кликабельный элемент */
+}
+
+#basket {
+    fill: #fff;
+    filter: invert(200%) saturate(0%);
+}
+
+#basket img {
+    width: 2vw;
+    height: 24px;
+}
+
+/* Стили для красного кружка с количеством */
+#basketCount {
+    position: absolute; /* Позиционируем относительно #basketContainer */
+    top: 0; /* Сверху */
+    right: 0; /* Справа */
+    transform: translate(50%, -50%); /* Сдвигаем центр кружка на край контейнера */
+    background-color: #e74c3c; /* Красный цвет фона */
+    color: white; /* Цвет текста */
+    font-size: 12px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    border-radius: 50%; /* Делаем круглым */
+    width: 20px; /* Ширина */
+    height: 20px; /* Высота */
+    display: flex; /* Для центрирования текста внутри кружка */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    min-width: 20px; /* Чтобы кружок не сплющивался, если текста мало */
+    padding: 2px; /* Небольшой внутренний отступ, если текст шире */
+    box-sizing: border-box; /* Включаем padding в размеры */
+    z-index: 10; /* Чтобы кружок был поверх других элементов, если нужно */
+}
+
+/* Скрываем кружок, если количество равно 0 */
+#basketCount:empty,
+#basketCount[style*="display: none"],
+#basketCount:not([data-count="0"]) { /* Добавим data-count для JS */
+    display: none;
+}
+
+/* Если количество больше 9, нужно немного поправить стили, чтобы он не выходил за рамки */
+#basketCount[data-count^="10"] { /* Для чисел от 10 до 99 */
+    width: 28px; /* Немного шире */
+}
+#basketCount[data-count^="100"] { /* Для чисел от 100 */
+    width: 35px; /* Еще шире */
+}

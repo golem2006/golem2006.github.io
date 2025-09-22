@@ -1,332 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link type="text/css" rel="stylesheet" href="styles.css">
-
-    <!-- Подключение шрифта Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-    <!-- https://www.figma.com/design/Kmb3QCJ4DfU47z3ecTjIZN/Макет?node-id=0-18&node-type=frame&t=VXXOHQLtmpUL2TK8-0 -->
-    <!-- https://drive.google.com/file/d/18dJrhte-ThrGemFJ2JO1NrBe6_Wb7hh0/view -->
-    
-
+    <title>Барбершоп Бородинский</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
+<!-- https://gerasimov\мдк 09.01\barber\index.html -->
 <body>
-    <div id="header-dim"></div>
-    <div id="header-redGradient"></div>
-    <div id="header-block">
-       <div id="header-gradient"></div>
-       
+    <header>
+        <div class="headerWrapper">
+            <a href="info.html" class="active">ИНФОРМАЦИЯ</a>
+            <a href="news.html">НОВОСТИ</a>
+            <a href="price-list.html">ПРАЙС-ЛИСТ</a>
+            <a href="shop.html">МАГАЗИН</a>
+            <a href="contacts.html">КОНТАКТЫ</a>
+            <div id="basketContainer">
+                <div id="basket">
+                    <img src="images/BasketIcon.svg" alt="Корзина">
+                </div>
+                <span id="basketCount">0</span>
+            </div>
+            <div id="enter">
+                <img id="enterPic" src="images/login.svg">
+                <a class="enterButton">ВХОД</a>
+            </div> 
+        </div>
+    </header>
+    <main>
+        <div id="hero">
+            <div class="hero-logo">
+                <img id="hero-logo-logo" src="images/logo.svg"></img>
+            </div>
+            <div class="hero-bottom">
+                <div class="hero-bottom-block">
+                    <div class="hero-bottom-block-header">
+                        БЫСТРО<br><span class="romb">◆</span>
+                    </div>
+                    <div class="hero-bottom-block-desc">
+                        МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ - СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТРИЖКИ-МИНУТКИ
+                    </div>
+                </div>
+                <div class="hero-bottom-block">
+                    <div class="hero-bottom-block-header">
+                        КРУТО<br><span class="romb">◆</span>
+                    </div>
+                    <div class="hero-bottom-block-desc">
+                        ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ
+                    </div>
+                </div>
+                <div class="hero-bottom-block">
+                    <div class="hero-bottom-block-header">
+                        ДОРОГО<br><span class="romb">◆</span>
+                    </div>
+                    <div class="hero-bottom-block-desc">
+                        НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО, К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЁТ ОПРЕДЕЛЁННЫЙ СТАТУС?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block flexRow">
+            <div class="block-block">
+                <div class="block-block-header">
+                    НОВОСТИ
+                </div>
+                <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ<br>11 января</p>
+                <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДАТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ<br>18 января</p>
+                <a href="#" class="blackButton">ВСЕ НОВОСТИ</a>
+            </div>
+            <div class="block-block">
+                <div class="block-block-header">
+                    ФОТОГАЛЕРЕЯ
+                </div>
+                <div class="slider-container">
+                    <img id="sliderImage" src="images/slider.jpg" alt="Изображение слайдера">
+                    <div class="flexRow">
+                        <a href="#" class="blackButton" id="prevButton">НАЗАД</a>
+                        <a href="#" class="blackButton" id="nextButton">ВПЕРЁД</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block flexRow">
+            <div class="block-block">
+                <div class="block-block-header">
+                    КОНТАКТНАЯ ИНФОРМАЦИЯ
+                </div>
+                <p>БАРБЕРШОП БОРОДИНСКИЙ<br>АДРЕС:Г.САНКТ-ПИТЕРБУРГ,Б.КОНЮШЕННАЯ,Д.19/8<br>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+                <p>ВРЕМЯ РАБОТЫ:<br>ПН-ПТ: С 10:00 ДО 22:00<br>СБ-ВС: С 10:00 ДО 19:00  </p>
+                <div class="flexRow flexRowStart">
+                        <a href="#" class="blackButton" id="prevButton">КАК ПРОЕХАТЬ</a>
+                        <a href="#" class="blackButton" id="nextButton">ОБРАТНАЯ СВЯЗЬ</a>
+                </div>
+            </div>
+            <div class="block-block">
+                <div class="block-block-header">
+                    ЗАПИСАТЬСЯ
+                </div>
+                <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+                <form name="" method="post" action="#" class="main-form">
+                    <div>
+                        <label for="date">ДАТА</label>
+                        <input type="date" name="#" id="date">
+                    </div>
+                    <div>
+                        <label for="time">ВРЕМЯ</label>
+                        <input type="time" name="#" id="time">
+                    </div>
+                    <div>
+                        <label for="name">ВАШЕ ИМЯ</label>
+                        <input placeholder="Имя" type="text" name="#" id="name">
+                    </div>
+                    <div>
+                        <label for="phone">ТЕЛЕФОН</label>
+                        <input placeholder="Телефон" type="tel" name="#" id="phone">
+                    </div>
+                        <input type="submit" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="flexRow">
+            <div>
+                <p>БАРБЕРШОП БОРОДИНСКИЙ</p>
+                <p>АДРЕС:Г.САНКТ-ПИТЕРБУРГ,Б.КОНЮШЕННАЯ,Д.19/8</p>
+                <p><u><a href="#">КАК НАС НАЙТИ?</a></u></p>
+                <p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+            </div>
+            <div class="textAlignCenter">
+                <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+                <div class="flexRow iconsBlock">
+                    <a href="#" class="icons">
+                        <img src="images/vk.svg">
+                    </a>
+                    <a href="#" class="icons">
+                        <img src="images/facebook.svg">
+                    </a>
+                    <a href="#" class="icons">
+                        <img src="images/instagram.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="textAlignCenter">
+                <p>РАЗРАБОТАНО:</p>
+                <a href="#" class="blackButton">HTML ACADEMY</a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal" id="modal1">
+        <div class="flexRow">
+            <h2>Корзина</h2>
+            <span class="round close" id="close1">✖</span>
+        </div>
+        <div id="basketContent"></div>
     </div>
-    <div id="header-height">
-        <wrapper id="header-wrapper">
-                <header>
-                    <div id="header-links">
-                        <img src="img/logo.png">
-                        <a href="#">Авто из Кореи</a>
-                        <a href="#">Авто из Китая</a>
-                        <a href="#">Авто из Японии</a>
-                        <a href="#">Контакты</a>
-                        <div id="header-phone">
-                            <a id="phone" href="#">8 (800) 500-49-46</a>
-                            <a href="#"><img src="img/cta_button.svg"></a>
-                            <a href="#"><img src="img/cta_button (1).svg"></a>
-                        </div>
-                    </div>
-                    
-                </header>
-                
-                <div id="header-button">
-                    <h1>АВТОМОБИЛЬ ВАШЕЙ МЕЧТЫ ЗДЕСЬ</h1>
-                    <p>Прозрачное ценообразование с подробным разъяснением затрат на каждом этапе</p>
-                    <button class="button">Рассчитать стоимость</button>
-                </div>
-                
-                <div id="header-bottom">
-                    
-                    <div id="left">
-                        <div id="first">
-                            <h4>5+</h4>
-                            <p>Лет на рынке</p>
-                        </div>
-                        <div id="second">
-                            <h4>4 000+</h4>
-                            <p>Довольных клиентов</p>
-                        </div>
-                        <div id="third">
-                            <h4>&#11088; 4.9</h4>
-                        </div>
-                    </div>
-                    <div id="right">
-                        <p>Экономия до <b>30%</b><br>от рынка авто в наличии</p>
-                        <button>Смотреть пример</button>
-                    </div>
-                </div>
-                <div id="header-bottomGrad"></div>
-        </wrapper>
-        
+    <div class="modal" id="modal2">
+        <div class="flexRow">
+            <h2>Вход</h2>
+            <span class="round close" id="close2">✖</span>
+        </div>
+        <form name="autorisation" method="post">
+            <input type="text" name="login" placeholder='Логин'>
+            <input type="text" name="password" placeholder='Пароль'>
+            <input class="buy-button" type="submit" value="Войти">
+        </form>
     </div>
-    <wrapper class="slider-wrapper">
-        <div class="slider">
-            <!-- Заголовок слайтера и кнопки -->
-            <div class="slider-header right">
-                <p>ПОПУЛЯРНЫЕ АВТО<br><span>ИЗ КОРЕИ</span> <img src="img/southK.png"></p>
-                <div class="slider-arrows">
-                    <div class="divLeft" id="leftone">
-                        <img class="left" src="img/arrow.svg">
-                    </div>
-                    <div class="divRight" id="rightone"> 
-                        <img class="right" src="img/arrow.svg">
-                    </div>
-                </div>
-            </div>
-            <!-- Сам слайдер -->
-            <div class="slider-line slider-left" id="one">
-                <div class="slider-active count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car1.jpeg">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-                
-                <div class="count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car2.png">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-                <div class="count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car2.png">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-                <div class="count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car2.png">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-                <div class="count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car2.png">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-            </div>
-        </div>
-    </wrapper>
-    <wrapper class="slider-wrapper">
-        <div class="slider">
-            <!-- Заголовок слайтера и кнопки -->
-            <div class="slider-header left">
-                <p>ПОПУЛЯРНЫЕ АВТО<br><span>ИЗ КИТАЯ</span> <img src="img/Flag China.svg"></p>
-                <div class="slider-arrows">
-                    <div class="divLeft" id="lefttwo">
-                        <img class="left" src="img/arrow.svg">
-                    </div>
-                    <div class="divRight" id="righttwo"> 
-                        <img class="right" src="img/arrow.svg">
-                    </div>
-                </div>
-            </div>
-            <!-- Сам слайдер -->
-            <div class="slider-line slider-right slider-line2">
-                <div class="count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car2.png">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-                
-                <div class="count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car2.png">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-                <div class="count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car2.png">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-                <div class="count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car2.png">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-                <div class="slider-active count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car1.jpeg">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-            </div>
-        </div>
-    </wrapper>
-    <wrapper class="slider-wrapper">
-        <div class="slider">
-            <!-- Заголовок слайтера и кнопки -->
-            <div class="slider-header right">
-                <p>ПОПУЛЯРНЫЕ АВТО<br><span>ИЗ ЯПОНИИ</span> <img src="img/Flag Japan.svg"></p>
-                <div class="slider-arrows">
-                    <div class="divLeft" id="leftthree">
-                        <img class="left" src="img/arrow.svg">
-                    </div>
-                    <div class="divRight" id="rightthree"> 
-                        <img class="right" src="img/arrow.svg">
-                    </div>
-                </div>
-            </div>
-            <!-- Сам слайдер -->
-            <div class="slider-line slider-left slider-line3">
-                <div class="slider-active count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car1.jpeg">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-                
-                <div class="count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car2.png">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-                <div class="count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car2.png">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-                <div class="count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car2.png">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-                <div class="count">
-                    <div class="slider-item">
-                        <b>Subaru LEVORG VN5</b>
-                        <p>2021 • Гибрит • 10 000 км</p>
-                        <img src="img/car2.png">
-                        <div class="flex">
-                            <b>2 115 600 ₽</b>
-                            <button>Оставить заявку</button>
-                            
-                        </div>
-                    </div>
-                    <span class="slider-underCard"></span>
-                </div>
-            </div>
-        </div>
-    </wrapper>
+    <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
 </body>
-<script src="slider1.js"></script>
-<script src="slider2.js"></script>
-<script src="slider3.js"></script>
+</html>
